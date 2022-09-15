@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Message App</string>
+    <array name="Days">
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </array>
+
+    <array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+</resources>

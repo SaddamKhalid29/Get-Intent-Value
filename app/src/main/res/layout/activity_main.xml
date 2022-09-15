@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textMessage"
+        android:layout_width="256dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Type here..."
+        android:inputType="textPersonName"
+        android:maxLength="700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="#231919"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/moveActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#272222"
+        android:text="Move Activity"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendBtn"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <Spinner
+        android:id="@+id/spnDays"
+        android:layout_width="398dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:entries="@array/Days"
+        app:layout_constraintBottom_toTopOf="@+id/moveActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendBtn"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="399dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/moveActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnDays"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <Spinner
+        android:id="@+id/Gender"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:entries="@array/Gender"
+        app:layout_constraintBottom_toTopOf="@+id/sendBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage"
+        app:layout_constraintVertical_bias="0.588" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
